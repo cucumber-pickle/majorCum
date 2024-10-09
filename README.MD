@@ -4,6 +4,9 @@ A Python bot for interacting with the Major Telegram Bot API. This bot can perfo
 
 [TELEGRAM CHANNEL](https://t.me/cucumber_scripts)
 
+## Updates
+- **09.10.24** A non-working date is added to http.log
+
 ## Register
 
 To use this bot, you need to register it with the Major Telegram Bot. 
@@ -119,8 +122,40 @@ To run the bot, execute the following command:
 python bot.py
 ```
 
+## How to get tgWebAppData (query_id / user_id)
+
+1. Login telegram via portable or web version
+2. Launch the bot
+3. Press `F12` on the keyboard 
+4. Open console
+5. Сopy this code in Console for getting tgWebAppData (user= / query=):
+
+```javascript
+copy(decodeURIComponent(sessionStorage['telegram-apps/launch-params']).split('tgWebAppData=')[1].split('&tgWebAppStartParam')[0])
+```
+
+6. you will get data that looks like this
+
+```
+query_id=AA....
+user=%7B%22id%....
+```
+7. add it to `data.txt` file or create it if you dont have one
+
+
+## This bot helpfull?  Please support me by buying me a coffee: 
+
+``` 0xc4bb02b8882c4c88891b4196a9d64a20ef8d7c36 ``` - BSC (BEP 20)
+
+``` UQBiNbT2cqf5gLwjvfstTYvsScNj-nJZlN2NSmZ97rTcvKz0 ``` - TON
+
+``` 0xc4bb02b8882c4c88891b4196a9d64a20ef8d7c36 ``` - Optimism
+
+``` THaLf1cdEoaA73Kk5yiKmcRwUTuouXjM17 ``` - TRX (TRC 20)
+
+
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
 For questions or support, please contact [CUCUMBER TG CHAT](https://t.me/cucumber_scripts_chat)
